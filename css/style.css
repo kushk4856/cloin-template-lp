@@ -247,6 +247,7 @@
 @media (max-width: 992px) {
   .md-text-center {
     text-align: center;
+   
   }
 
   .md-text-right {
@@ -2573,7 +2574,9 @@ body {
   max-width: 100%;
   background-color: #fff;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 html.scroll-lock {
   overflow: hidden;
 }
@@ -3134,7 +3137,7 @@ input[type="submit"].form-control:focus {
 
 .section-flat .section-content {
   width: 100%;
-  padding: 120px 0 120px;
+  padding: 60px 0 120px;
   position: relative;
   clear: both;
 }
@@ -3236,6 +3239,7 @@ input[type="submit"].form-control:focus {
   .section-parallax>.bg-element {
     background-position: initial !important;
   }
+  
 }
 
 /*  [ 02 ] - Image BG
@@ -3650,7 +3654,7 @@ input[type="submit"].form-control:focus {
 .divider-line {
   display: inline-block;
   clear: both;
-  margin: 90px auto 80px;
+  margin: 30px auto 30px;
   width: calc(100% - 30px);
   border-top: 1px solid;
   border-top-color: #eee;
@@ -5046,6 +5050,7 @@ table tbody td:first-child {
   margin-bottom: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: #00e163   !important;
 }
 
 .slide-content h1 {
@@ -5172,7 +5177,7 @@ table tbody td:first-child {
 
 /* Banner Center Box */
 .banner-center-box {
-  /* padding: 160px 0 160px; */
+  padding: 120px 0 120px;
   max-height: 100%;
   max-width: 100%;
   width: 100%;
@@ -5182,7 +5187,7 @@ table tbody td:first-child {
 
 @media (max-width: 480px) {
   .banner-center-box {
-    padding: 130px 0;
+    padding: 30px 0 0;
   }
 }
 
@@ -5457,7 +5462,7 @@ table tbody td:first-child {
 /* Box Form */
 .box-form {
   position: relative;
-  padding: 50px;
+  padding:40px 50px 50px;
   border-radius: 10px;
   background-color: #fff;
 }
@@ -5973,8 +5978,11 @@ select option[disabled] {
 
 .box-service-1 .box-content {
   text-align: center;
+ 
 }
-
+#section-our-services-1 .box-service-1 .box-content p{
+   font-size: 13px;
+}
 .box-service-1:hover {
   transform: translateY(-10px);
 }
@@ -6276,6 +6284,7 @@ select option[disabled] {
 
 .box-some-fact-1 .box-content {
   width: 100%;
+
 }
 
 .box-some-fact-1 .box-content h2 {
@@ -6364,15 +6373,16 @@ select option[disabled] {
   top: 0;
   padding: 50px 40px;
   border: none;
-  box-shadow: inset 0 0 0 4px #ddd;
+  box-shadow: inset 0 0 0 3px #ddd;
   border-radius: 10px;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
-.pricing-table .pt-column.featured {
+/* .pricing-table .pt-column.featured {
   border: none;
-  box-shadow: inset 0 0 0 4px #05d561;
-}
+  box-shadow: inset 0 0 0 3px #05d561;
+} */
 
 .pricing-table .pt-column.featured::before {
   content: "";
@@ -6399,17 +6409,17 @@ select option[disabled] {
 
 .pricing-table .pt-column:not(.featured):hover,
 .pricing-table .pt-column.featured:hover {
-  transform: translateY(-15px);
-  box-shadow: inset 0 0 0 4px #05d561, 0 20px 28px 5px rgba(0, 0, 0, 0.1);
+  /* transform: translateY(-15px); */
+  box-shadow: inset 0 0 0 3px #05d561, 0 20px 28px 4px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-table .pt-column:not(.featured):hover {
-  box-shadow: inset 0 0 0 4px #888, 0 20px 28px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 3px  #05d561, 0 20px 28px 4px rgba(0, 0, 0, 0.1);
 }
 
-.pricing-table .pt-column:not(.featured):hover .pt-column-header .price h2 {
+/* .pricing-table .pt-column:not(.featured):hover .pt-column-header .price h2 {
   color: #05d561;
-}
+} */
 
 .pricing-table .pt-column-header {
   position: relative;
@@ -6445,6 +6455,7 @@ select option[disabled] {
   font-size: 23px;
   transition: all 0.2s;
   font-weight: 700;
+  color: #05d561;
 }
 
 .pricing-table .pt-column-header .price .period {
@@ -6638,12 +6649,12 @@ select option[disabled] {
 /*  [ 09 ] - Section CTA 1
 ============================ */
 #section-cta-1 .section-content {
-  padding: 140px 0;
+  padding:60px 0 120px;
 }
 
 @media (max-width: 768px) {
   #section-cta-1 .section-content {
-    padding: 120px 0;
+    padding: 40px 0;
   }
 }
 
@@ -7688,7 +7699,10 @@ select option[disabled] {
   margin: auto;
   padding-block: 24px;
 }
-
+.footer-links{
+  width: 80%;
+  margin-inline: auto;
+}
 .footer-links a {
   color: #05d561 !important;
   font-weight: 600;
@@ -7728,3 +7742,54 @@ select option[disabled] {
   box-shadow: 0px 0px 50px 60px rgba(235, 249, 238, 0.5);
 
 }
+
+
+.banner-center-box.bottom-form {
+       padding: 0 !important;
+    }
+
+
+.box-center h1{
+  color: #00e163; 
+
+  .heading-200{
+    color: #fff ;
+  }
+}
+ #section-our-services-2.section-flat .section-content{
+     padding-bottom: 60px !important;
+    }
+
+@media (max-width: 992px){
+
+  .center-vertical .section-content>.container>.row>[class*="col-"]{
+    display: block;
+  }
+  .section-flat .section-content{
+     padding: 40px 0 40px;
+    }
+    .slide-content .box-form {
+      margin-bottom: 50px;
+    }
+    .divider-line {
+      margin: 0 auto 80px;
+    }
+    .slide-content .banner-center-box{
+      margin-top: 100px;
+    }
+    #section-cta-1 .section-content{
+      padding-block: 40px;
+    }
+    /* #section-our-services-2 .section-content img{
+      width: 100%;
+    } */
+
+    .banner-center-box.bottom-form {
+       padding: 0 !important;
+      
+    }
+   .banner-center-box.bottom-form{
+    padding-top: 0 !important;
+    margin-top: 40px;
+   }
+  }
