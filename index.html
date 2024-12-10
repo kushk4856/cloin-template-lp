@@ -33,39 +33,13 @@
 	============================================= -->
 		<title>Cloin</title>
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async="" src="../../gtag/js?id=G-ZC45H2BKQQ"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() { dataLayer.push(arguments); }
-			gtag('js', new Date());
-
-			gtag('config', 'G-ZC45H2BKQQ');
-		</script>
+	
 
 	</head>
 
 	<body class="homepage">
 
-		<!-- Loading Progress
-	============================================= -->
-		<div id="loading-progress">
-			<a class="logo" href="#">
-				<img src="images/files/logo-loading.png" data-logo-alt="images/files/logo-header.png" alt="">
-				<h3><span class="colored">Cloin</span></h3>
-				<span>HTML Template</span>
-			</a><!-- .logo end -->
-			<div class="lp-content">
-				<div class="lp-counter">
-					Loading
-					<div id="lp-counter">0%</div>
-				</div><!-- .lp-counter end -->
-				<div class="lp-bar">
-					<div id="lp-bar"></div>
-				</div><!-- .lp-bar end -->
-			</div><!-- .lp-content end -->
-		</div><!-- #loading-progress end -->
-
+	
 		<!-- Document Full Container
 	============================================= -->
 		<div id="full-container">
@@ -141,9 +115,9 @@
 								<div class="col-md-5 col-md-push-1">
 
 									<div class="banner-center-box">
-										<div class="cta-subscribe cta-subscribe-1 box-form text-center">
+										<div class="cta-subscribe cta-subscribe-1 box-form ">
 											<div class="box-title">
-												<span class="icon icon-Megaphone"></span>
+												<!-- <span class="icon icon-Megaphone"></span> -->
 												<h3>Schedule a Free Demo</h3>
 												<!-- <p>Everything you need to grow your business. Order our services today! -->
 												</p>
@@ -156,7 +130,7 @@
 													<div class="form-group">
 														<!-- <span class="field-icon icon icon-User"></span> -->
 														<input type="text" name="cs1Name" id="cs1Name"
-															class="form-control" placeholder="Name*">
+															class="form-control" placeholder="Full Name*">
 													</div><!-- .form-group end -->
 													<div class="form-group">
 														<!-- <span class="field-icon icon icon-User"></span> -->
@@ -171,7 +145,7 @@
 													<div class="form-group">
 														<!-- <span class="field-icon icon icon-Phone2"></span> -->
 														<input type="text" name="cs1PhoneNum" id="cs1PhoneNum"
-															class="form-control" placeholder="Mobile*">
+															class="form-control" placeholder="Mobile Number*">
 													</div>
 													<div class="form-group">
 														<!-- <span class="field-icon icon icon-Phone2"></span> -->
@@ -246,8 +220,7 @@
 									<div class="box-content">
 										<h4><a href="javascript:;">Data Security</a></h4>
 										<p>
-											Ensure encrypted, compliant and reliable protection for sensitive patient
-											data.
+											Ensure encrypted, compliant and reliable protection.
 										</p>
 									</div><!-- .box-content end -->
 								</div><!-- .box-info box-service-1 end -->
@@ -638,9 +611,9 @@
 								<div class="col-md-12" style="min-height: 550px;padding: 0;">
 
 									<div class="banner-center-box bottom-form">
-										<div class="cta-subscribe cta-subscribe-1 box-form text-center">
+										<div class="cta-subscribe cta-subscribe-1 box-form ">
 											<div class="box-title">
-												<span class="icon icon-Megaphone"></span>
+												<!-- <span class="icon icon-Megaphone"></span> -->
 												<h3 style="color: #222;">Schedule Demo Now</h3>
 												<!-- <p>Everything you need to grow your business. Order our services today! -->
 												</p>
@@ -654,7 +627,7 @@
 													<div class="form-group">
 														<!-- <span class="field-icon icon icon-User"></span> -->
 														<input type="text" name="cs1Name" id="cs1Name"
-															class="form-control" placeholder="Name*">
+															class="form-control" placeholder="Full Name*">
 													</div><!-- .form-group end -->
 													<div class="form-group">
 														<!-- <span class="field-icon icon icon-User"></span> -->
@@ -669,7 +642,7 @@
 													<div class="form-group">
 														<!-- <span class="field-icon icon icon-Phone2"></span> -->
 														<input type="text" name="cs1PhoneNum" id="cs1PhoneNum"
-															class="form-control" placeholder="Mobile*">
+															class="form-control" placeholder="Mobile Number*">
 													</div><!-- .form-group end -->
 													<div class="form-group">
 														<!-- <span class="field-icon icon icon-Phone2"></span> -->
@@ -678,8 +651,15 @@
 													</div><!-- .form-group end -->
 													<div class="form-group">
 														<!-- <span class="field-icon icon icon-User"></span> -->
-														<input type="text" name="cs1Name" id="cs1Name"
-															class="form-control" placeholder="Currently Using Any Software?*">
+														<select type="text" name="cs1Name" id="cs1Name"
+															class="form-control">
+															<option value="" disabled selected>Currently Using Any Software?*</option>
+															<option value="" >Yes</option>
+															<option value="">No</option>
+														</select>
+													</div><!-- .form-group end -->
+													<div class="form-group">
+														<textarea name="" id="" class="form-group" placeholder="Message*"></textarea>
 													</div><!-- .form-group end -->
 													<div class="form-group">
 														<input type="submit" class="form-control" value="Schedule Demo"
